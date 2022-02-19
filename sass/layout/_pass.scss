@@ -1,0 +1,50 @@
+.pas-list {
+  display: flex;
+}
+
+
+
+.pas-list__item {
+  width: calc((100% -90px) / 4);
+  margin-right: 30px;
+
+ &:nth-child(4n) {
+    margin-right: 0;
+  } 
+}
+
+
+
+.pas-list__title {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--title);
+}
+.pas-list__text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.pas-list__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 120px;
+  background-color: var(--background-team);
+  margin-bottom: 30px;
+}
+
+.icon-svg {
+  fill: var(--title);
+  transition: fill 250ms var(--transition-timing);
+}
+
+.btn-modal .icon-svg:focus,
+.btn-modal .icon-svg:hover {
+  fill: var(--accent-btn);
+}

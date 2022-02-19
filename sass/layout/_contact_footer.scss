@@ -1,0 +1,25 @@
+.contact {
+  margin-right: 70px;
+  flex-grow: 1;
+}
+.address {
+  margin-top: 20px;
+  font-style: normal;
+}
+
+.address__link-contact {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--address-contact);
+}
+.address__link-contact--color {
+  color: var(--secondary);
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.logo__footer--accent {
+  color: var(--secondary);
+}

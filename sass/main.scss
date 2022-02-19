@@ -1,0 +1,28 @@
+
+@import "./utils/variables";
+@import "./utils/mixin";
+@import "./base/reset";
+@import "./base/visually-hidden";
+
+@import "./components/container";
+@import "./components/form";
+@import "./components/logo";
+@import "./components/modal";
+@import "./components/section";
+@import "./components/section_title";
+@import "./components/social";
+@import "./components/btn.scss";
+
+@import "./layout/clients";
+@import "./layout/contact_footer";
+@import "./layout/contact_header";
+@import "./layout/filter";
+@import "./layout/footer";
+@import "./layout/galery";
+@import "./layout/hero";
+@import "./layout/navigation";
+@import "./layout/pass";
+@import "./layout/plea-footer";
+@import "./layout/team";
+@import "./layout/work";
+

@@ -1,0 +1,36 @@
+
+.plea__text,
+.form__text {
+  margin-bottom: 20px;
+  color: var(--secondary);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.plea-list {
+  display: flex;
+}
+
+.plea-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+.plea-list__link {
+  @include centerFlex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #44454e;
+  transition: background-color 250ms var(--transition-timing);
+
+&:focus,
+&:hover {
+  background-color: var(--accent);
+}
+}
+
+
+.plea-list__icon-social {
+  fill: var(--secondary);
+}

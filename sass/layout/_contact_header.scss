@@ -1,0 +1,38 @@
+.contacts{
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts__text {
+  margin-left: 10px;
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts__link {
+  color: var(--primere-text);
+  padding-bottom: 32px;
+  padding-top: 32px;
+  text-decoration: none;
+  transition: color 250ms var(--transition-timing);
+
+&:hover,
+&:focus {
+  color: var(--accent);
+}
+
+}
+
+
+.contacts__icon {
+  fill: var(--primere-text);
+  transition: fill 250ms var(--transition-timing);
+
+.contacts__link:hover &,
+.contacts__link:focus & {
+  fill: var(--accent);
+}
+}
+
