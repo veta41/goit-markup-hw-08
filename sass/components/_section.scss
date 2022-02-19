@@ -6,11 +6,15 @@
 
 .section--no-padding {
   padding-top: 0;
+
+@media screen and (max-width:$desktop) {
+    display: none;
+  }
 }
 
 
 .section--background-team {
   background-color: var(--background-team);
-  max-width: 1600px;
   margin: 0 auto;
+  
 }

@@ -5,6 +5,8 @@
 
 .form-footer{
   @include centerFlex;
+  flex-wrap: wrap;
+  
 }
 .form-footer__input {
   min-width: 358px;

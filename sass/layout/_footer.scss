@@ -6,7 +6,14 @@
   max-width: 1600px;
 }
 
-.footer-flex {
+ .footer-flex {
+  @media  screen and (min-width:768px) {
   display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+@media  screen and (min-width:1200px) {
   align-items: baseline;
 }
+ }
