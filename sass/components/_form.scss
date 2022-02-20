@@ -1,6 +1,14 @@
 
 .form {
-  margin-left: 93px;
+  @media  screen and (max-width: 767px) {
+   text-align: center;
+ 
+   }
+
+  @media  screen and (min-width: 1200px) {
+    margin-left: 93px;
+ 
+   }
 }
 
 .form-footer{
@@ -9,9 +17,8 @@
   
 }
 .form-footer__input {
-  min-width: 358px;
+  
   height: 50px;
-  margin-right: 12px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -21,14 +28,27 @@
   &::placeholder{
     padding-top: 15px;
     padding-bottom: 15px;
+  }
+
+  @media  screen and (max-width: 1199px) {
+    width: 100%;
+    margin-bottom: 20px;
+ 
+   }
+
+    @media  screen and (min-width: 1200px) {
+      min-width: 358px;
+      margin-right: 12px;
    
- }
+     }
+ 
 }
 
 
 
 .form-footer__btn {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   padding: 10px 29px;
   color: var(--secondary);

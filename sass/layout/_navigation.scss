@@ -1,6 +1,14 @@
-// .navigation {
-//   display: flex;
-// }
+ .navigation {
+
+  @media  screen and (max-width:767px) {
+    display: none;
+ }
+
+ @media  screen and (min-width:768px) {
+  display: flex;
+}
+   
+ }
 
 .navigation__link {
   display: block;

@@ -1,9 +1,12 @@
 
-
 .portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
+
+  @media  screen and (min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+
 }
 
 .portfolio-footer {
@@ -11,11 +14,27 @@
 }
 
 .portfolio__item {
-  width: 370px;
-  margin: 15px;
+ 
   border-bottom: 1px solid var(--border-secondary-color);
   border-right: 1px solid var(--border-secondary-color);
   border-left: 1px solid var(--border-secondary-color);
+
+  
+  @media  screen and (min-width: 768px) {
+    flex-basis: calc((100% - 64px) / 2);
+    margin: 15px;
+  }
+
+  @media  screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 120px) / 3);
+ 
+   }
+
+  &:not(:last-child){
+    @media  screen and (max-width:767px) {
+      margin-bottom: 30px;
+   }
+  }
 }
 
 .portfolio__link {

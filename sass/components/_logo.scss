@@ -1,6 +1,6 @@
 
 .logo {
-  margin-right: 93px;
+ 
   padding-top: 25px;
   padding-bottom: 25px;
 
@@ -10,6 +10,10 @@
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent);
+
+  @media  screen and (min-width:1200px) {
+    margin-right: 93px;
+  }
 }
 
 .logo__header--accent {

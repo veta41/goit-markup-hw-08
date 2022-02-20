@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @media screen and (min-width: 768px){
+    justify-content: space-between;
+  }
+  }
+
+
+.site-nav {
+  display: flex;
+  align-items: center;
+}
+
+.page-header {
+  max-width: 1600px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.menu-container{
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  background-color: red;
+
+  &.is-open{
+    display: block;
+  }
+}

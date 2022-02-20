@@ -20,8 +20,19 @@
     <header class="page-header">
         <div class="container ">
             <div class="wrapper">
-                <nav class="site-nav" >
                 <a class=" logo" href="./index.html">Web<span class="logo__header--accent">Studio</span></a>
+                
+                <button type="button" class="menu-btn is-open" aria-controls="menu-container" data-menu-button>
+                    <svg class="icon-svg" width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-cross" href="./images/icons.svg#icon-close"></use>
+                        <use class="icon-menu" href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+                <div class="menu-container" id ="menu-container" data-menu></div>
+                
+                <nav class="site-nav" >
+                
             
                 <ul class="navigation">
                     <li class="navigation__item">

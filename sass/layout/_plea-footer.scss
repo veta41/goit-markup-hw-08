@@ -1,16 +1,28 @@
 
 .plea__text,
 .form__text {
-  margin-bottom: 20px;
+
   color: var(--secondary);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-}
+   margin-bottom: 20px;
+    
+  }
+  
+ 
+
 
 .plea-list {
   display: flex;
+
+  @media  screen and (max-width: 767px) {
+    margin-bottom: 60px;
+    justify-content: center;
+  
+    }
+ 
 }
 
 .plea-list__item:not(:last-child) {
