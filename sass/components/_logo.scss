@@ -1,21 +1,23 @@
 
 .logo {
  
-  padding-top: 25px;
-  padding-bottom: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  
+    font-family: Raleway;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent);
+    @media screen and (min-width:1200px) {
+      margin-right: 93px;
+    }
 
-  font-family: Raleway;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--accent);
-
-  @media  screen and (min-width:1200px) {
-    margin-right: 93px;
   }
-}
+
 
 .logo__header--accent {
   color: var(--title);
+  
 }

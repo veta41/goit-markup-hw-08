@@ -13,11 +13,19 @@
 
 .form-footer{
   @include centerFlex;
-  flex-wrap: wrap;
+
+  @media  screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+  
+    }
+  
   
 }
 .form-footer__input {
-  
+  max-width: 450px;
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -31,7 +39,7 @@
   }
 
   @media  screen and (max-width: 1199px) {
-    width: 100%;
+    
     margin-bottom: 20px;
  
    }

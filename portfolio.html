@@ -20,17 +20,26 @@
   <header class="page-header">
     <div class="container ">
         <div class="wrapper">
+            <a class=" logo" href="./index.html">Web<span class="logo__header--accent">Studio</span></a>
+            
+            <button type="button" class="menu-btn is-open" artia-expended="false" aria-controls="menu-container" data-menu-button>
+                <svg  width="40" height="40" aria-label="Переключатель мобильного меню">
+                
+                    <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
 
-          <a class=" logo" href="./index.html">Web<span class="logo__header--accent">Studio</span></a>
+            
+            
             <nav class="site-nav" >
             
-        
+         
             <ul class="navigation">
                 <li class="navigation__item">
-                    <a class="navigation__link " href="./index.html">Студия</a>
+                    <a class="navigation__link navigation--active" href="./index.html">Студия</a>
                 </li>
                 <li class="navigation__item">
-                    <a class="navigation__link navigation__link--active" href="./portfolio.html">Портфолио</a>
+                    <a class="navigation__link" href="./portfolio.html">Портфолио</a>
                 </li>
                 <li class="navigation__item">
                     <a class="navigation__link" href="">Контакты</a>
@@ -55,8 +64,67 @@
             </li>
         </ul>
     </div>
-        
     </div>
+    <div class="mob-container" id ="menu-container" data-menu>
+        <div class="menu-wrapper">
+        <button type="button" class="menu-btn is-open" artia-expended="false" aria-controls="menu-container" data-menu-button>
+            <svg  width="40" height="40" aria-label="Переключатель мобильного меню">
+                <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+                
+            </svg>
+        </button>
+       
+            
+            <nav class="mob-container__nav" >
+                
+             
+                <ul class="mob-container__menu">
+                    <li class="mob-container__item">
+                        <a class="mob-container__link mob-container--active " href="./index.html">Студия</a>
+                    </li>
+                    <li class="mob-container__item">
+                        <a class="mob-container__link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mob-container__item">
+                        <a class="mob-container__link" href="">Контакты</a>
+                    </li>
+                </ul>
+            
+            </nav>
+        
+        
+        <ul class="contacts-menu">
+            
+            <li class="contacts-menu__item ">
+                <a class="contacts-menu__link" href="mailto:info@devstudio.com">
+                    <span class="contacts-menu__text text--accent">info@devstudio.com</span></a>
+            </li>
+            
+            <li class="contacts-menu__item">
+                <a class="contacts-menu__link" href="tel:+380961111111">
+                    <span class="contacts-menu__text">+38 096 111 11 11</span></a>
+            </li>
+        </ul>
+    <ul class="social-menu">
+        <li class="social-menu__item">
+            <a class="social-menu__link social-menu--spacer" href="">Instagram</a>
+            
+        </li>
+        <li class="social-menu__item">
+            <a class="social-menu__link social-menu--spacer" href="">Twitter</a>
+            
+        </li>
+        <li class="social-menu__item">
+            <a class="social-menu__link social-menu--spacer" href="">Facebook</a>
+           
+        </li>
+        <li class="social-menu__item">
+            <a class="social-menu__link" href="">LinkedIn</a>
+        </li>
+        
+    </ul>
+    </div>
+</div>
 </header>
       
       <main>
