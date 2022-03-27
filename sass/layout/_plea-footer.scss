@@ -18,7 +18,7 @@
   display: flex;
 
   @media  screen and (max-width: 767px) {
-    margin-bottom: 60px;
+   
     justify-content: center;
   
     }
@@ -27,6 +27,7 @@
 
 .plea-list__item:not(:last-child) {
   margin-right: 10px;
+  margin-bottom: 60px;
 }
 .plea-list__link {
   @include centerFlex;

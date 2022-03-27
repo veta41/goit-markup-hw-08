@@ -22,7 +22,7 @@
             <div class="wrapper">
                 <a class=" logo" href="./index.html">Web<span class="logo__header--accent">Studio</span></a>
                 
-                <button type="button" class="menu-btn is-open" artia-expended="false" aria-controls="menu-container" data-menu-button>
+                <button type="button" class="menu-open-btn is-open" artia-expended="false" aria-controls="menu-container" >
                     <svg  width="40" height="40" aria-label="Переключатель мобильного меню">
                     
                         <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
@@ -65,10 +65,10 @@
             </ul>
         </div>
         </div>
-        <div class="mob-container" id ="menu-container" data-menu >
+        <div class="mob-container" id ="menu-container"  >
             <div class="container-menu">
             <div class="menu-wrapper">
-            <button type="button" class="menu-btn is-open"  >
+            <button type="button" class="menu-close-btn "  >
                 <svg  width="40" height="40" aria-label="Переключатель мобильного меню">
                     <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
                     
@@ -221,8 +221,37 @@
                 <ul class="team">
                 
                     <li class="team-user">
-                
-                        <img class="team-user__img" src="./images/team_card_1.jpg" alt="наш продактменеджер"  width="270">
+                <picture>
+                    <source
+                    
+                    srcset="
+                    ./images/team_card_1_desk1x.jpg 1x,
+                    ./images/team_card_1_desk2x.jpg 2x
+                "
+                   media="(min-width: 1200px)" 
+                    />
+
+                    <source
+                    
+                    srcset="
+                    ./images/team_card_1_tab1x.jpg 1x,
+                    ./images/team_card_1_tab2x.jpg 2x
+                "
+                   media="(min-width: 768px)" 
+                    />
+
+                    <source
+                    
+                    srcset="
+                    ./images/team_card_1_mob1x.jpg 1x,
+                    ./images/team_card_1_mob2x.jpg 2x
+                "
+                   media="(min-width: 480px)" 
+                    />
+
+                    <img class="team-user__img" src="./images/team_card_1.jpg" alt="наш продактменеджер"  width="270">
+                </picture>
+                        
                         <div class="team-user__footer">
                             <h3 class="team-user__title">Игорь Демьяненко</h3>
                         <p class="team-user__career" lang="en">Product Designe</p>
@@ -261,8 +290,37 @@
                     </li>
                 
                     <li class="team-user">
-                
-                        <img class="team-user__img" src="./images/team_card_2.jpg" alt="наш разработчик"  width="270">
+                        <picture>
+                            <source
+                            
+                            srcset="
+                            ./images/team_card_2_desk1x.jpg 1x,
+                            ./images/team_card_2_desk2x.jpg 2x
+                        "
+                           media="(min-width: 1200px)" 
+                            />
+        
+                            <source
+                            
+                            srcset="
+                            ./images/team_card_2_tab1x.jpg 1x,
+                            ./images/team_card_2_tab2x.jpg 2x
+                        "
+                           media="(min-width: 768px)" 
+                            />
+        
+                            <source
+                            
+                            srcset="
+                            ./images/team_card_2_mob1x.jpg 1x,
+                            ./images/team_card_2_mob2x.jpg 2x
+                        "
+                           media="(min-width: 480px)" 
+                            />
+        
+                            <img class="team-user__img" src="./images/team_card_2.jpg" alt="наш продактменеджер"  width="270">
+                        </picture>
+                        
                         <div class="team-user__footer">
                             <h3 class="team-user__title">Ольга Репина</h3>
                         <p class="team-user__career" lang="en">Frontend Developer</p>
@@ -303,8 +361,37 @@
                     </li>
                 
                     <li class="team-user">
-                
-                        <img class="team-user__img" src="./images/team_card_3.jpg" alt="наш маркетолог" width="270" >
+                        <picture>
+                            <source
+                            
+                            srcset="
+                            ./images/team_card_3_desk1x.jpg 1x,
+                            ./images/team_card_3_desk2x.jpg 2x
+                        "
+                           media="(min-width: 1200px)" 
+                            />
+        
+                            <source
+                            
+                            srcset="
+                            ./images/team_card_3_tab1x.jpg 1x,
+                            ./images/team_card_3_tab2x.jpg 2x
+                        "
+                           media="(min-width: 768px)" 
+                            />
+        
+                            <source
+                            
+                            srcset="
+                            ./images/team_card_3_mob1x.jpg 1x,
+                            ./images/team_card_3_mob2x.jpg 2x
+                        "
+                           media="(min-width: 480px)" 
+                            />
+        
+                            <img class="team-user__img" src="./images/team_card_3.jpg" alt="наш продактменеджер"  width="270">
+                        </picture>
+                        
                         <div class="team-user__footer">
                             <h3 class="team-user__title">Николай Тарасов</h3>
                         <p class="team-user__career" lang="en">Marketing</p>
@@ -345,7 +432,37 @@
                     </li>
                 
                     <li class="team-user">
-                       <img class="team-user__img" src="./images/team_card_4.jpg" alt="наш дизайнер" width="270">
+                        <picture>
+                            <source
+                            
+                            srcset="
+                            ./images/team_card_4_desk1x.jpg 1x,
+                            ./images/team_card_4_desk2x.jpg 2x
+                        "
+                           media="(min-width: 1200px)" 
+                            />
+        
+                            <source
+                            
+                            srcset="
+                            ./images/team_card_4_tab1x.jpg 1x,
+                            ./images/team_card_4_tab2x.jpg 2x
+                        "
+                           media="(min-width: 768px)" 
+                            />
+        
+                            <source
+                            
+                            srcset="
+                            ./images/team_card_4_mob1x.jpg 1x,
+                            ./images/team_card_4_mob2x.jpg 2x
+                        "
+                           media="(min-width: 480px)" 
+                            />
+        
+                            <img class="team-user__img" src="./images/team_card_4.jpg" alt="наш продактменеджер"  width="270">
+                        </picture>
+                       
                         <div class="team-user__footer">
                             <h3 class="team-user__title">Михаил Ермаков</h3>
                         <p class="team-user__career" lang="en">UI Designer</p>
@@ -560,5 +677,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     </body>
 </html>

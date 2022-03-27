@@ -6,33 +6,83 @@
       var(--background-hero),
       var(--background-hero)
     ),
-    url("../images/hero_img.jpg");
+    url("../images/hero_mob_1x_img.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding: 118px 60px;
-  // padding-bottom: 118px;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
+  padding: 118px 0px;
   text-align: center;
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+      to right,
+      var(--background-hero),
+      var(--background-hero)
+    ),
+    url("../images/hero_mob_2x_img.jpg");
+  }
+
+  @media screen and (min-width:768px) {
+    
+    
+
+     background-image: linear-gradient(
+      to right,
+      var(--background-hero),
+      var(--background-hero)
+    ),
+    url("../images/hero_mob_1x_img.jpg");
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        to right,
+        var(--background-hero),
+        var(--background-hero)
+      ),
+      url("../images/hero_mob_2x_img.jpg");
+    }
+
+  @media screen and (min-width:1200px) {
+    padding: 200px 0px; 
+    
+
+     background-image: linear-gradient(
+      to right,
+      var(--background-hero),
+      var(--background-hero)
+    ),
+    url("../images/hero_desk_1x_img.jpg");
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        to right,
+        var(--background-hero),
+        var(--background-hero)
+      ),
+      url("../images/hero_desk_2x_img.jpg");
+    }
+
+    }
 }
 .hero__title {
   margin-bottom: 30px;
 
   font-weight: 900;
-
   font-size: 26px;
   line-height: 1.62;
-
-  // font-size: 44px;
-  // line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--secondary);
+  @media screen and (min-width:1200px){
+     font-size: 44px;
+     line-height: 1.36;}
 }
 
 
-
+}

@@ -49,9 +49,6 @@
 
 .mob-container__link{
   display: flex;
-  
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--title);
   transition: color 250ms var(--transition-timing);
   align-items: center;
@@ -73,4 +70,5 @@
 .icon-cross:hover,
 .icon-cross:focus{
 fill:var(--accent);
+
 }

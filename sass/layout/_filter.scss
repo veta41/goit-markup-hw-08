@@ -1,13 +1,22 @@
 
 .controls {
   
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
-  justify-content: center;
+  
    
   @media  screen and (max-width:767px) {
     flex-wrap: wrap;
  }
+
+ @media  screen and (min-width:768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+}
+@media  screen and (min-width:1200px) {
+  
+  margin-bottom: 50px;
+}
 }
 
 .controls__item:not(:last-child) {
@@ -19,7 +28,7 @@
   border: none;
   background-color: #f5f4fa;
   border-radius: 4px;
-  padding: 6px 22px;
+  // padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -28,6 +37,10 @@
   transition: color 250ms var(--transition-timing),
   background-color 250ms var(--transition-timing),
   box-shadow 250ms var(--transition-timing);
+
+  @media  screen and (max-width:767px) {
+    padding: 6px 22px;
+ }
 
 &:hover,
 &:focus {

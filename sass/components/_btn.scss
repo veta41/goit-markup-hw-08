@@ -27,10 +27,11 @@
 
 
 
-.menu-btn{
+.menu-close-btn,
+.menu-open-btn{
   display: block;
   margin-left: auto;
-  // padding-left: 15px;
+  cursor: pointer;
   border:none;
   background-color: transparent;
 
