@@ -248,7 +248,7 @@ img {
   transition: transform 250ms var(--transition-timing);
   transition: transform 250ms var(--transition-timing), -webkit-transform 250ms var(--transition-timing);
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .modal {
     min-width: 450px;
     min-height: 609px;
