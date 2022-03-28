@@ -4,23 +4,32 @@
     display: none;
  }
 
- 
+ @media  screen and (min-width:768px) {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  
+ }
 
   @media  screen and (min-width:1200px) {
   display: flex;
-  margin-left: auto;
+  flex-direction: row;
+ 
   
 }
-   
+@media  screen and (min-width:1200px) {
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
+}
+ }
+
  }
 
 .contacts__text {
   margin-left: 10px;
 }
 
-.contacts__item:not(:last-child) {
-  margin-right: 50px;
-}
+
 
 .contacts__link {
   color: var(--primere-text);
