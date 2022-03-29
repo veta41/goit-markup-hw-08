@@ -1,4 +1,9 @@
-
+.plea{
+  @media  screen and (max-width:767px) {
+    margin-bottom: 60px;
+    
+  }
+}
 .plea__text,
 .form__text {
 
@@ -27,7 +32,7 @@
 
 .plea-list__item:not(:last-child) {
   margin-right: 10px;
-  margin-bottom: 60px;
+ 
 }
 .plea-list__link {
   @include centerFlex;

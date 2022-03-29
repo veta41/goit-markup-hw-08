@@ -7,6 +7,7 @@
 }
 @media  screen and (min-width:1200px) {
   display: flex;
+  margin: -15px;
   
 }
 
@@ -23,7 +24,7 @@
 
   @media  screen and (min-width: 1200px) {
     flex-basis: calc((100% - 180px) / 6);
-    &:not(:last-child){margin-right: 0;}
+    
  
    }
 

@@ -17,6 +17,12 @@
  
   
 }
+@media  screen and (min-width:768px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+   }
+
 @media  screen and (min-width:1200px) {
 .contacts__item:not(:last-child) {
   margin-right: 50px;
@@ -25,16 +31,11 @@
 
  }
 
-.contacts__text {
-  margin-left: 10px;
-}
 
 
 
 .contacts__link {
   color: var(--primere-text);
-  padding-bottom: 32px;
-  padding-top: 32px;
   text-decoration: none;
   transition: color 250ms var(--transition-timing);
 
@@ -43,12 +44,19 @@
   color: var(--accent);
 }
 
+@media  screen and (min-width:1200px) {
+
+padding-bottom: 32px;
+padding-top: 32px;
+
+}
 }
 
 
 .contacts__icon {
   fill: var(--primere-text);
   transition: fill 250ms var(--transition-timing);
+  margin-right: 10px;
 
 .contacts__link:hover &,
 .contacts__link:focus & {

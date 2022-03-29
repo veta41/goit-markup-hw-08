@@ -15,14 +15,17 @@
   @media screen and (min-width: 768px){
   display: flex;
   align-items: center;
+  margin-left: 88px;
 }
 }
 
 .page-header {
-
-  @media screen and (min-width: 1200px){
-  max-width: 1600px;
   border-bottom: 1px solid var(--border-color);
   position: relative;
+  
+  @media screen and (min-width: 1200px){
+  max-width: 1600px;
+  // border-bottom: 1px solid var(--border-color);
+  // position: relative;
 }
 }

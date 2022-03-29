@@ -1,19 +1,9 @@
 .contact {
 
-  @media  screen and (max-width:1199px) {
-   margin-bottom: 60px;
-   
- }
+  text-align: center;
+  margin-bottom: 60px;
   
- @media  screen and (min-width:767px) {
-  margin-right: 165px;
- 
-
- 
-}
-
   @media  screen and (min-width:1200px) {
-    margin-right: 70px;
     flex-grow: 1;
  }
   
